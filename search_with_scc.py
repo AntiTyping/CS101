@@ -250,3 +250,21 @@ for r in sorted(search_results, key = lambda result: len(result['related']),
         for c in r['related']:
             print "   ", c
 
+
+#sample output
+#zeus:~/projects/CS101 (master)$ python search_with_scc.py 
+#Search results for ['python', 'language']
+#http://udacity.com/python/language7.html
+#   Strongly connected web pages:
+#    http://udacity.com/python/language8.html
+#    http://udacity.com/python/language6.html
+#http://udacity.com/python/language8.html
+#   Strongly connected web pages:
+#    http://udacity.com/python/language6.html
+#    http://udacity.com/python/language7.html
+#http://udacity.com/python/language6.html
+#   Strongly connected web pages:
+#    http://udacity.com/python/language8.html
+#    http://udacity.com/python/language7.html
+#http://udacity.com/python/language9.html
+#http://udacity.com/pythons.html
